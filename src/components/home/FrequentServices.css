@@ -1,0 +1,31 @@
+.frequent-section {
+  padding-top: 1rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.frequent-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.frequent-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.15rem;
+  background: var(--md-surface-bright);
+  border: 1px solid var(--md-outline-variant);
+  border-radius: var(--md-shape-full);
+  font: var(--md-label-lg);
+  color: var(--md-primary);
+  box-shadow: var(--md-elevation-1);
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.frequent-item:hover {
+  background: var(--md-primary-container);
+  border-color: var(--md-primary);
+  box-shadow: var(--md-elevation-2);
+}

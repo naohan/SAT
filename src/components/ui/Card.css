@@ -1,0 +1,14 @@
+.md-card {
+  background: var(--md-surface-bright);
+  border-radius: var(--md-shape-lg);
+  border: 1px solid var(--md-outline-variant);
+}
+
+.md-card--elevated {
+  box-shadow: var(--md-elevation-1);
+  border-color: transparent;
+}
+
+.md-card--sm { padding: 1rem; }
+.md-card--md { padding: 1.5rem; }
+.md-card--lg { padding: 2rem; }

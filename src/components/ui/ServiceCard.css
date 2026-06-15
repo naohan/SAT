@@ -1,0 +1,75 @@
+.service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--md-surface-bright);
+  border-radius: var(--md-shape-lg);
+  padding: 1.75rem;
+  border: 1px solid var(--md-outline-variant);
+  box-shadow: var(--md-elevation-1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 210px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--card-color);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--md-elevation-3);
+}
+
+.service-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--md-shape-md);
+  background: color-mix(in srgb, var(--card-color) 14%, white);
+  color: var(--card-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.service-card-title {
+  font: var(--md-title-lg);
+  color: var(--md-primary);
+  margin: 0 0 0.5rem;
+}
+
+.service-card-desc {
+  font: var(--md-body-md);
+  color: var(--md-on-surface-variant);
+  margin: 0;
+  flex: 1;
+  line-height: 1.55;
+}
+
+.service-card-arrow {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--md-shape-full);
+  background: var(--card-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--md-elevation-1);
+  transition: transform 0.2s;
+}
+
+.service-card:hover .service-card-arrow {
+  transform: translateX(2px);
+}

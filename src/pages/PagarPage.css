@@ -1,0 +1,210 @@
+.debt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.debt-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--md-outline-variant);
+  border-radius: var(--md-shape-md);
+  cursor: pointer;
+  background: var(--md-surface-bright);
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.debt-item:hover {
+  border-color: var(--md-outline);
+}
+
+.debt-item--selected {
+  background: var(--md-secondary-container);
+  border-color: var(--md-secondary);
+  box-shadow: var(--md-elevation-1);
+}
+
+.debt-item__checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--md-secondary);
+  flex-shrink: 0;
+}
+
+.debt-item__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.debt-item__concept {
+  font: var(--md-title-md);
+  margin: 0;
+  color: var(--md-on-surface);
+}
+
+.debt-item__meta {
+  font: var(--md-label-md);
+  color: var(--md-on-surface-variant);
+  margin: 0.15rem 0 0;
+}
+
+.debt-item__amount {
+  font: var(--md-title-md);
+  font-weight: 700;
+  color: var(--md-primary);
+  flex-shrink: 0;
+}
+
+.payment-label {
+  font: var(--md-body-md);
+  color: var(--md-on-surface-variant);
+  margin: 1.5rem 0 0.75rem;
+}
+
+/* ----- Wizard de pago ----- */
+.pago-modo {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pago-modo__tab {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid var(--md-outline-variant);
+  border-radius: var(--md-shape-md);
+  background: var(--md-surface-bright);
+  color: var(--md-on-surface-variant);
+  font: var(--md-label-lg);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.pago-modo__tab:hover {
+  border-color: var(--md-primary);
+}
+
+.pago-modo__tab.is-active {
+  border-color: var(--md-primary);
+  background: var(--md-primary-container);
+  color: var(--md-primary);
+  font-weight: 600;
+}
+
+.pago-search {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.pago-search__btn {
+  height: fit-content;
+}
+
+.pago-intro {
+  font: var(--md-body-md);
+  color: var(--md-on-surface-variant);
+  margin: 0 0 1.25rem;
+}
+
+.pago-datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.pago-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+/* Resumen */
+.pago-resumen {
+  border: 1px solid var(--md-outline-variant);
+  border-radius: var(--md-shape-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.pago-resumen__title {
+  font: var(--md-title-md);
+  color: var(--md-on-surface);
+  margin: 0 0 0.75rem;
+}
+
+.pago-resumen__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font: var(--md-body-md);
+  color: var(--md-on-surface-variant);
+  padding: 0.35rem 0;
+}
+
+.pago-resumen__row--total {
+  border-top: 1px solid var(--md-outline-variant);
+  margin-top: 0.35rem;
+  padding-top: 0.65rem;
+  font: var(--md-title-md);
+  font-weight: 700;
+  color: var(--md-primary);
+}
+
+.pago-resumen__datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  font: var(--md-body-md);
+  color: var(--md-on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+/* Tarjetas / medios de pago */
+.card-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.65rem;
+}
+
+.card-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid var(--md-outline-variant);
+  border-radius: var(--md-shape-md);
+  background: var(--md-surface-bright);
+  color: var(--md-on-surface);
+  font: var(--md-label-lg);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.card-option:hover {
+  border-color: var(--md-primary);
+}
+
+.card-option.is-active {
+  border-color: var(--md-primary);
+  background: var(--md-primary-container);
+  color: var(--md-primary);
+  font-weight: 600;
+}
+
+.card-option svg {
+  color: var(--md-primary);
+}
+
+@media (max-width: 640px) {
+  .pago-search {
+    grid-template-columns: 1fr;
+  }
+}

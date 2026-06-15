@@ -1,0 +1,51 @@
+.papeleta-result {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.papeleta-result__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.papeleta-result__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font: var(--md-label-md);
+  color: var(--md-on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.papeleta-result__title {
+  font: var(--md-headline-md);
+  color: var(--md-primary);
+  margin: 0.25rem 0 0;
+}
+
+.papeleta-result__question {
+  font: var(--md-body-md);
+  color: var(--md-on-surface-variant);
+  margin: 0.5rem 0 0;
+}
+
+.papeleta-result__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.papeleta-result .alert-banner {
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .papeleta-result__actions .md-btn {
+    flex: 1 1 100%;
+  }
+}

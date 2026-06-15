@@ -1,0 +1,65 @@
+.ecosystem {
+  background: var(--md-surface-container);
+}
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.ecosystem-card {
+  background: var(--md-surface-bright);
+  border: 1px solid var(--md-outline-variant);
+  border-radius: var(--md-shape-lg);
+  padding: 1.5rem;
+  box-shadow: var(--md-elevation-1);
+}
+
+.ecosystem-card__need {
+  font: var(--md-title-lg);
+  color: var(--md-primary);
+  margin: 0 0 0.35rem;
+}
+
+.ecosystem-card__desc {
+  font: var(--md-body-md);
+  color: var(--md-on-surface-variant);
+  margin: 0 0 1rem;
+}
+
+.ecosystem-card__systems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ecosystem-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font: var(--md-label-lg);
+  color: var(--md-on-surface);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--md-shape-sm);
+  background: var(--md-surface-container);
+  transition: background 0.2s, color 0.2s;
+}
+
+.ecosystem-link:hover {
+  background: var(--md-primary-container);
+  color: var(--md-on-primary-container);
+}
+
+.ecosystem-link--internal {
+  background: var(--md-secondary-container);
+  color: var(--md-on-secondary-container);
+}
+
+.ecosystem-link--internal:hover {
+  background: var(--md-secondary);
+  color: white;
+}

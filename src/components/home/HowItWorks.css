@@ -1,0 +1,57 @@
+.how-it-works {
+  background: var(--md-surface-container);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+}
+
+.step-card {
+  text-align: center;
+  position: relative;
+  padding: 1.25rem;
+  background: var(--md-surface-bright);
+  border-radius: var(--md-shape-lg);
+  box-shadow: var(--md-elevation-1);
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--md-shape-full);
+  background: var(--md-primary);
+  color: var(--md-on-primary);
+  font: var(--md-title-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.step-card h3 {
+  font: var(--md-title-md);
+  color: var(--md-primary);
+  margin: 0 0 0.5rem;
+}
+
+.step-card p {
+  font: var(--md-body-md);
+  color: var(--md-on-surface-variant);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}

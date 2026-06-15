@@ -1,0 +1,85 @@
+/* Material Design 3 — SAT Lima (azul institucional) */
+:root {
+  /* Primary — azul institucional */
+  --md-primary: #0c2d5c;
+  --md-primary-container: #d4e4f7;
+  --md-on-primary: #ffffff;
+  --md-on-primary-container: #001d3d;
+
+  /* Secondary — verde acción */
+  --md-secondary: #1b6b3a;
+  --md-secondary-container: #d4edda;
+  --md-on-secondary: #ffffff;
+  --md-on-secondary-container: #0a3d1f;
+
+  /* Tertiary — acentos de servicio */
+  --md-tertiary: #5c4db1;
+  --md-tertiary-container: #e8deff;
+
+  /* Surface */
+  --md-surface: #f8fafc;
+  --md-surface-dim: #e8edf2;
+  --md-surface-bright: #ffffff;
+  --md-surface-container: #eef2f6;
+  --md-surface-container-high: #e2e8f0;
+  --md-on-surface: #1a2332;
+  --md-on-surface-variant: #5a6578;
+
+  /* Outline */
+  --md-outline: #c5cdd8;
+  --md-outline-variant: #e2e8f0;
+
+  /* Semantic */
+  --md-error: #ba1a1a;
+  --md-error-container: #ffdad6;
+  --md-warning-container: #fff3cd;
+  --md-warning-on: #7a5c00;
+  --md-success-container: #d4edda;
+  --md-success-on: #0a5c2e;
+  --md-info-container: #d4e4f7;
+  --md-info-on: #0c2d5c;
+
+  /* WhatsApp */
+  --md-whatsapp: #25d366;
+
+  /* Shape — MD3 */
+  --md-shape-xs: 4px;
+  --md-shape-sm: 8px;
+  --md-shape-md: 12px;
+  --md-shape-lg: 16px;
+  --md-shape-xl: 28px;
+  --md-shape-full: 9999px;
+
+  /* Elevation */
+  --md-elevation-1: 0 1px 2px rgba(12, 45, 92, 0.06), 0 1px 3px rgba(12, 45, 92, 0.1);
+  --md-elevation-2: 0 2px 6px rgba(12, 45, 92, 0.08), 0 4px 12px rgba(12, 45, 92, 0.06);
+  --md-elevation-3: 0 4px 12px rgba(12, 45, 92, 0.1), 0 8px 24px rgba(12, 45, 92, 0.08);
+
+  /* Typography */
+  --md-font: 'Roboto', system-ui, -apple-system, sans-serif;
+  --md-display-lg: 700 2.25rem/1.2 var(--md-font);
+  --md-headline-lg: 700 1.75rem/1.25 var(--md-font);
+  --md-headline-md: 600 1.35rem/1.3 var(--md-font);
+  --md-title-lg: 600 1.15rem/1.4 var(--md-font);
+  --md-title-md: 600 1rem/1.4 var(--md-font);
+  --md-body-lg: 400 1rem/1.5 var(--md-font);
+  --md-body-md: 400 0.9rem/1.5 var(--md-font);
+  --md-label-lg: 500 0.9rem/1.4 var(--md-font);
+  --md-label-md: 500 0.8rem/1.4 var(--md-font);
+
+  /* Legacy aliases (compat) */
+  --sat-navy: var(--md-primary);
+  --sat-navy-light: #1a4a7a;
+  --sat-green: var(--md-secondary);
+  --sat-green-dark: #15803d;
+  --sat-whatsapp: var(--md-whatsapp);
+  --sat-bg: var(--md-surface);
+  --sat-white: var(--md-surface-bright);
+  --sat-text: var(--md-on-surface);
+  --sat-text-muted: var(--md-on-surface-variant);
+  --sat-border: var(--md-outline-variant);
+  --sat-shadow: var(--md-elevation-2);
+  --sat-radius: var(--md-shape-md);
+  --sat-radius-lg: var(--md-shape-lg);
+  --font-sans: var(--md-font);
+}

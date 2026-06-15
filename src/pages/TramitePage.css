@@ -1,0 +1,37 @@
+.tramite-search {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.tramite-search__field {
+  min-width: 200px;
+}
+
+.tramite-search > .md-btn {
+  height: fit-content;
+}
+
+.tramite-result {
+  margin-top: 1.5rem;
+}
+
+.tramite-result__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.tramite-result__title {
+  font: var(--md-headline-md);
+  color: var(--md-primary);
+  margin: 0;
+}
+
+.tramite-result__download {
+  margin-top: 1.25rem;
+}

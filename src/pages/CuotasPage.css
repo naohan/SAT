@@ -1,0 +1,59 @@
+.cuotas-total {
+  margin-bottom: 2rem;
+}
+
+.cuotas-total__label {
+  display: block;
+  font: var(--md-label-md);
+  color: var(--md-on-surface-variant);
+}
+
+.cuotas-total__amount {
+  font: var(--md-headline-lg);
+  color: var(--md-primary);
+}
+
+.cuotas-stepper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cuotas-stepper__input {
+  width: 80px;
+  text-align: center;
+  padding: 0.75rem;
+  border: 1px solid var(--md-outline);
+  border-radius: var(--md-shape-sm);
+  font: var(--md-title-md);
+  color: var(--md-on-surface);
+}
+
+.cuotas-stepper__unit {
+  color: var(--md-on-surface-variant);
+  font: var(--md-body-md);
+}
+
+.cuotas-result {
+  padding: 1.5rem;
+  background: var(--md-secondary-container);
+  border-radius: var(--md-shape-lg);
+  margin: 1.5rem 0;
+}
+
+.cuotas-result__label {
+  display: block;
+  font: var(--md-label-md);
+  color: var(--md-on-secondary-container);
+}
+
+.cuotas-result__amount {
+  font: var(--md-headline-lg);
+  color: var(--md-secondary);
+}
+
+.cuotas-result__note {
+  font: var(--md-label-md);
+  color: var(--md-on-surface-variant);
+  margin: 0.5rem 0 0;
+}

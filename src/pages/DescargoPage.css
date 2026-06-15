@@ -1,0 +1,62 @@
+.success-card {
+  text-align: center;
+}
+
+.success-card__icon {
+  font-size: 3rem;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--md-success-container);
+  color: var(--md-success-on);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-weight: 700;
+}
+
+.success-card__title {
+  font: var(--md-headline-md);
+  color: var(--md-primary);
+  margin: 0 0 0.5rem;
+}
+
+.success-card__ref {
+  color: var(--md-on-surface-variant);
+  margin: 0 0 1.5rem;
+}
+
+.success-card__action {
+  margin-top: 1.5rem;
+}
+
+.papeleta-ref {
+  padding: 0.875rem 1rem;
+  background: var(--md-surface-container);
+  border-radius: var(--md-shape-md);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.papeleta-ref__label {
+  font: var(--md-label-md);
+  color: var(--md-on-surface-variant);
+}
+
+.papeleta-ref__value {
+  font: var(--md-title-md);
+  color: var(--md-primary);
+}
+
+.upload-zone p {
+  margin: 0;
+}
+
+.upload-zone__hint {
+  margin-top: 0.5rem !important;
+  font: var(--md-label-md);
+  color: var(--md-on-surface-variant);
+}
